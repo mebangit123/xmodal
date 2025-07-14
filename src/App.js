@@ -1,9 +1,9 @@
+// import UserForm from "./components/Form/UserForm";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div>
-      Hello world...
-    </div>
+    <Home />
   );
 }
 

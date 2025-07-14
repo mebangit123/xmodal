@@ -1,0 +1,43 @@
+.modal {
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+.formControl > input{
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid lightgray
+}
+.formControl > label {
+    font-weight: 500;
+}
+.submit-button {
+    background-color: rgb(53, 175, 216);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #ffff;
+}
