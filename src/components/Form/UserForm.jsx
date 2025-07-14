@@ -55,7 +55,7 @@ function UserForm({setIsOpen}) {
           </div>
           <div className='formControl'>
             <label>Date of Birth:</label>
-            <input type='date' name='dob' value={dob} onChange={(e) => setDob(e.target.value)} required/>
+            <input type='date' name='dob' id='dob' value={dob} onChange={(e) => setDob(e.target.value)} required/>
           </div>
           <div className='formControl'>
             <button type='submit' className='submit-button'>Submit</button>
