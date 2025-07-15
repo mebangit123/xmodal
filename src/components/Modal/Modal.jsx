@@ -1,6 +1,5 @@
 import React from 'react'
 import Modal from 'react-modal'
-Modal.setAppElement('#root');
 
 function ModalWrapper({isOpen, setIsOpen,children}) {
 

@@ -37,29 +37,31 @@ function UserForm({setIsOpen}) {
     setIsOpen(false);
   }
   return (
-    <div className='modal-content'>
-      <h3>Fill Details</h3>
-      <form className='formContent' onSubmit={handleSubmit}>
-        <div className='formControl'>
-          <label>Username:</label>
-          <input type='text' name='username' id='username' value={username} onChange={(e) => setUsername(e.target.value)} on required/>
-        </div>
-        <div className='formControl'>
-          <label>Email Address:</label>
-          <input type='text' name='email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} ref={emailRef} required/>
-        </div>
-        <div className='formControl'>
-          <label>Phone Number:</label>
-          <input type='number' name='phone' id='phone' value={phone} onChange={(e) => setPhone(e.target.value)} required/>
-        </div>
-        <div className='formControl'>
-          <label>Date of Birth:</label>
-          <input type='date' name='dob' id='dob' value={dob} onChange={(e) => setDob(e.target.value)} required/>
-        </div>
-        <div className='formControl'>
-          <button type='submit' className='submit-button'>Submit</button>
-        </div>
-      </form>
+    <div className='modal'>
+      <div className='modal-content'>
+        <h3>Fill Details</h3>
+        <form className='formContent' onSubmit={handleSubmit}>
+          <div className='formControl'>
+            <label>Username:</label>
+            <input type='text' name='username' id='username' value={username} onChange={(e) => setUsername(e.target.value)} on required/>
+          </div>
+          <div className='formControl'>
+            <label>Email Address:</label>
+            <input type='text' name='email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} ref={emailRef} required/>
+          </div>
+          <div className='formControl'>
+            <label>Phone Number:</label>
+            <input type='number' name='phone' id='phone' value={phone} onChange={(e) => setPhone(e.target.value)} required/>
+          </div>
+          <div className='formControl'>
+            <label>Date of Birth:</label>
+            <input type='date' name='dob' id='dob' value={dob} onChange={(e) => setDob(e.target.value)} required/>
+          </div>
+          <div className='formControl'>
+            <button type='submit' className='submit-button'>Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   )
 }
