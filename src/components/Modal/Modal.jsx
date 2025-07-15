@@ -11,6 +11,7 @@ function ModalWrapper({isOpen, setIsOpen,children}) {
       content: {
           width : '95%',
           maxWidth: '572px',
+          position: 'fixed',
           top: '50%',
           left: '50%',
           transform: 'translateX(-50%) translateY(-50%)',
