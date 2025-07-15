@@ -8,7 +8,7 @@ function Home() {
 
   return (
     <div>
-      <div className={styles.wrapper}>
+      <div className={styles.modal}>
         <h1>User Details Modal</h1>
         <button onClick={() => setIsOpen(true)} className={styles.btn}>Open Form</button>
       </div>

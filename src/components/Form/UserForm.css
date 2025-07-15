@@ -1,9 +1,6 @@
-.modal {
+.modal-content {
     padding: 10px 50px;
     border-radius: 5px;
-}
-
-.modal-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
