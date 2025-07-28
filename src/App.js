@@ -3,23 +3,40 @@ import Home from "./components/Home/Home";
 import ModalWrapper from "./components/Modal/Modal";
 import UserForm from "./components/Form/UserForm";
 import ReactModal from 'react-modal';
-import { useState } from "react";
-ReactModal.setAppElement('#root');
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 
-function App() {
+// Set the app element for accessibility
+Modal.setAppElement('#root');
 
-  const [isOpen, setIsOpen] = useState(false);
+const App = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   return (
-    <>
-       <h1>User Details Modal</h1>
-        <button onClick={() => setIsOpen(true)}>Open Form</button>
-
-      {/* <Home /> */}
-      <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen} />
-        {/* <UserForm setIsOpen={setIsOpen}/> */}
-    </>    
+    <div>
+      <h1>React Modal Example</h1>
+      <button onClick={openModal}>Open Modal</button>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+      >
+        <h2>Modal Title</h2>
+        <div>
+          <p>This is a simple modal example.</p>
+          <button onClick={closeModal}>Close Modal</button>
+        </div>
+      </Modal>
+    </div>
   );
-}
+};
 
 export default App;
