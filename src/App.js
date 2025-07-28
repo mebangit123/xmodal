@@ -97,7 +97,7 @@ const App = () => {
           <p>Click below to open the modal dialog</p>
           
           <button className="trigger-btn" onClick={openModal}>
-            Open Modal
+            Open Form
           </button>
           
           <Modal 
