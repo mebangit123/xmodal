@@ -9,9 +9,10 @@ function ModalWrapper({isOpen, setIsOpen,children}) {
 
   const customStyles = {
       content: {
+          // position: 
           width : '95%',
           maxWidth: '572px',
-          position: 'fixed',
+          position: 'relative',
           top: '50%',
           left: '50%',
           transform: 'translateX(-50%) translateY(-50%)',
@@ -24,6 +25,7 @@ function ModalWrapper({isOpen, setIsOpen,children}) {
       },
       overlay: {
         background: 'rgba(0, 0, 0, 0.7)',
+        position: 'absolute'
       },
     }
   return (
