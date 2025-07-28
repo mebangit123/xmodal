@@ -9,7 +9,7 @@ function Home({setIsOpen}) {
   // const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <div className={styles.wrapper}>
         <h1>User Details Modal</h1>
         <button onClick={() => setIsOpen(true)} className={styles.btn}>Open Form</button>
@@ -17,7 +17,7 @@ function Home({setIsOpen}) {
       {/* <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
         <UserForm setIsOpen={setIsOpen}/>
       </Modal> */}
-    </div>
+    </>
   )
 }
 

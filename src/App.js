@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <Home setIsOpen={setIsOpen}/>
-    <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen}>
-      <UserForm setIsOpen={setIsOpen}/>
-    </ModalWrapper>
+      <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen}>
+        <UserForm setIsOpen={setIsOpen}/>
+      </ModalWrapper>
     </>    
   );
 }
