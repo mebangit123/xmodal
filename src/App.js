@@ -8,14 +8,14 @@ import { useState } from "react";
 
 function App() {
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <Home setIsOpen={setIsOpen}/>
-      <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen}>
+      <Home />
+      {/* <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen}>
         <UserForm setIsOpen={setIsOpen}/>
-      </ModalWrapper>
+      </ModalWrapper> */}
     </>    
   );
 }

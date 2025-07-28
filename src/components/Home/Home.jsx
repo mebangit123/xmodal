@@ -5,8 +5,8 @@ import UserForm from '../Form/UserForm';
 import ReactModal from 'react-modal';
 // ReactModal.setAppElement('#root');
 
-function Home({setIsOpen}) {
-  // const [isOpen, setIsOpen] = useState(false);
+function Home() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -14,9 +14,9 @@ function Home({setIsOpen}) {
         <h1>User Details Modal</h1>
         <button onClick={() => setIsOpen(true)} className={styles.btn}>Open Form</button>
       {/* </div> */}
-      {/* <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
         <UserForm setIsOpen={setIsOpen}/>
-      </Modal> */}
+      </Modal>
     </>
   )
 }
