@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import Modal from 'react-modal'
+// ReactModal.setAppElement('#root');
 
 function ModalWrapper({isOpen, setIsOpen,children}) {
     const [username , setUsername] = useState('');

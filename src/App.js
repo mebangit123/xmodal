@@ -4,7 +4,7 @@ import ModalWrapper from "./components/Modal/Modal";
 import UserForm from "./components/Form/UserForm";
 import ReactModal from 'react-modal';
 import { useState } from "react";
-// ReactModal.setAppElement('#root');
+ReactModal.setAppElement('#root');
 
 function App() {
 
