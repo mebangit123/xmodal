@@ -10,10 +10,10 @@ function Home({setIsOpen}) {
 
   return (
     <>
-      <div className={styles.wrapper}>
+      {/* <div className={styles.wrapper}> */}
         <h1>User Details Modal</h1>
         <button onClick={() => setIsOpen(true)} className={styles.btn}>Open Form</button>
-      </div>
+      {/* </div> */}
       {/* <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
         <UserForm setIsOpen={setIsOpen}/>
       </Modal> */}
