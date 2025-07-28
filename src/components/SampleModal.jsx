@@ -22,7 +22,7 @@ const SampleModal = () => {
   return (
     <div>
       <Button variant="contained" onClick={handleOpen}>
-        Open Modal
+        Open Form
       </Button>
       <Modal
         open={open}
