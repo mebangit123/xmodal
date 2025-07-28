@@ -14,9 +14,8 @@ function Home() {
         <h1>User Details Modal</h1>
         <button onClick={() => setIsOpen(true)} className={styles.btn}>Open Form</button>
       {/* </div> */}
-      <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-        <UserForm setIsOpen={setIsOpen}/>
-      </Modal>
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
+        {/* <UserForm setIsOpen={setIsOpen}/> */}
     </>
   )
 }

@@ -16,9 +16,8 @@ function App() {
         <button onClick={() => setIsOpen(true)}>Open Form</button>
 
       {/* <Home /> */}
-      <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen}>
-        <UserForm setIsOpen={setIsOpen}/>
-      </ModalWrapper>
+      <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen} />
+        {/* <UserForm setIsOpen={setIsOpen}/> */}
     </>    
   );
 }
