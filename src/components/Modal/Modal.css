@@ -44,7 +44,7 @@
     .modal {
       background-color: white;
       width: 90%;
-      max-width: 500px;
+      max-width: 50%;
       border-radius: 8px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
       transform: translateY(20px);
@@ -139,3 +139,28 @@
     .trigger-btn:hover {
       background-color: #1d4ed8;
     }
+    .formControl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+.formControl > input{
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid lightgray
+}
+.formControl > label {
+    font-weight: 500;
+}
+.submit-button {
+    background-color: rgb(53, 175, 216);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #ffff;
+    margin-top: 10px;
+}
