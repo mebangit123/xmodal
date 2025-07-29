@@ -1,8 +1,4 @@
-// import UserForm from "./components/Form/UserForm";
-import Home from "./components/Home/Home";
-import ModalWrapper from "./components/Modal/Modal";
-import UserForm from "./components/Form/UserForm";
-import ReactModal from 'react-modal';
+
 import React, { useEffect, useState } from 'react';
 import Modal from "./components/Test/Modal";
 import './components/Test/Modal.css'

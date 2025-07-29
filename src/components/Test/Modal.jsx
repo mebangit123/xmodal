@@ -35,7 +35,7 @@ const Modal = ({ isOpen, onClose, title, children, footer }) => {
       };
       return (
         <div 
-          className={`modal-container ${isOpen ? 'show' : ''}`}
+          className={`modal-container ${isOpen ? 'show' : 'none'}`}
           onClick={handleBackdropClick}
           role="dialog"
           aria-modal="true"
