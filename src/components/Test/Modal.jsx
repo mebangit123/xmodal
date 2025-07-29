@@ -34,7 +34,8 @@ const Modal = ({ isOpen, onClose, title, children, footer }) => {
         }
       };
       return (
-        <div 
+        isOpen && (
+            <div 
           className={`modal-container ${isOpen ? 'show' : 'none'}`}
           onClick={handleBackdropClick}
           role="dialog"
@@ -58,6 +59,7 @@ const Modal = ({ isOpen, onClose, title, children, footer }) => {
             {footer && <div className="modal-footer">{footer}</div>}
           </div>
         </div>
+        )
       );
     };
 
